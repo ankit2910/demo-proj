@@ -25,6 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
+      - name: Java installation
+        run: sudo apt install openjdk-11-jdk
+
       # Runs a single command using the runners shell
       - name: Maven install
         run: mvn clean install
