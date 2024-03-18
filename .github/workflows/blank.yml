@@ -27,6 +27,10 @@ jobs:
 
       - name: Java installation
         run: sudo apt install openjdk-11-jdk openjdk-11-jre
+
+      - name: Java version
+        run: java --version
+        
       # Runs a single command using the runners shell
       - name: Maven install
         run: mvn clean install
